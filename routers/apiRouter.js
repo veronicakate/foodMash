@@ -1,7 +1,10 @@
 const apiRouter = require("express").Router();
+const {getImageInfo} = require('../controllers/controller.js');
 
-apiRouter.get("/", (req, res) => {
-  res.status(200).send("Success");
-});
+
+apiRouter.post("/", getImageInfo)
+
+// apiRouter.use('/', getImageInfo)
+
 
 module.exports = apiRouter;

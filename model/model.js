@@ -1,9 +1,10 @@
 const VisualRecognitionV3 = require("watson-developer-cloud/visual-recognition/v3");
 // const fs = require("fs");
+const apiKey = require('../config');
 
 const visualRecognition = new VisualRecognitionV3({
   version: "2018-03-19",
-  iam_apikey: "KSeMYMk3N1F5AfCs-cpVoh82CevVJPCsjmZAGwzCKp0K"
+    iam_apikey: apiKey
 });
 
 exports.analyseImage = (url, cb) => {

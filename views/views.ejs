@@ -1,0 +1,19 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>foodMash</title>
+  </head>
+  <body>
+      <% recipes.forEach (item => { %>
+      <li>Link: 
+          <a href=<%=item.source_url %>><%=item.title %></a>
+          <img src=<%=item.image_url %>/>
+        </li>  
+     <%  }); %>
+        
+   <h1</h1>
+  </body>
+</html>
